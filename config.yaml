@@ -26,7 +26,7 @@ Taxonomies:
 params:
   # parameter used to specify the number of article in each row 
   # for the summary pages, the possible options are: 2, 3, 4, 5 or 6
-  articlesPerRow: 3 
+  articlesPerRow: 3
 
   # option to specify the favicon image of the site
   # the path is relative to the folder "assetDir" of this configuration
@@ -63,7 +63,7 @@ params:
   # navbar options
   navbar:
     fontFamily: "Atkinson Hyperlegible"
-    showIcons: True
+    showIcons: False
     
   # 404 page options
   pagNotFound:
@@ -83,7 +83,7 @@ params:
     # it can be: "none", "menu", "footer" or "menu+footer"
     linkPosition: "menu+footer" 
     # this options let you specify the text of the link to the homepage
-    # linkText: "Homepage"  
+    linkText: "Strona główna"
     # option to specify the title in the homepage
     title: Bartosz Szafarz
     # option to specify the subtitle in the homepage
@@ -97,41 +97,28 @@ params:
   footer:
     # option to specify the logo in the footer
     # the starting folder is configure in "assetDir" of this file
-    logo: "/images/refresh-square.svg"
-    # option to specify your contact email in the footer
+    logo: "/images/my_logo-big.png"
     email: 
       link: szafarz.bartosz@gmail.com
       title: szafarz.bartosz@gmail.com
-    # option to specify your linkedin profile in the footer
     linkedin: 
       link: in/bszafarz
       title: in/bszafarz
-    # option to specify your facebook account in the footer; 
-    # **uncomment** the lines below to show in footer
     # facebook: 
     #   link: your.username
     #   title: Facebook
-    # option to specify your github account in the footer; 
-    # **uncomment** the below lines to show in footer
     github: 
       link: bszafarz
       title: bszafarz
-    # option to specify your twitter username in the footer; 
-    # **uncomment** the below lines to show in footer
     # twitter: 
     #    link: username
     #    title: Twitter
-    # option to specify your instagram username in the footer; 
-    # **uncomment** the below lines to show in footer
     instagram: 
       link: szafarz.bartosz
       title: szafarz.bartosz
-    # option to specify your telegram username in the footer; 
-    # **uncomment** the below lines to show in footer
     # telegram: 
     #    link: username
     #    title: Telegram
-    # option to specify the copyright in the footer
     copyright: Bartosz Szafarz - 2022
 
 ###################################################################
@@ -144,25 +131,17 @@ languages:
   en:
     languageName:       English
     weight:             2
-    # When Specifying different parameters for a different language 
-    # you need to specify all the mandatory sub-parameters as well.
-    # E.g.: if you specify the "homepage" parameter then you need to
-    #       specify all mandatory sub-parameters, e.g.: "title". 
-    # See example below:
     params:
       homepage:
         title: Bartosz Szafarz
         subtitle: Welcome on my personal website
+        linkPosition: "menu+footer"
+        linkText: "Home"
         image: "/images/avataaars.png" # worker.svg 
         imageWidth: 528px
       
-      # Some sub-parameters of the "footer" parameter
-      # can be omitted because the code allows for them to be 
-      # missed but they will treated as they do not exist,
-      # i.e., the parameters of the default language
-      # won't be inherited.
       footer:
-        logo: "/images/refresh-square.svg"
+        logo: "/images/my_logo-big.png"
         email: 
           link: szafarz.bartosz@gmail.com
           title: szafarz.bartosz@gmail.com
